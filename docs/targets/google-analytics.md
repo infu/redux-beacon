@@ -187,13 +187,13 @@ import { trackException } from '@redux-beacon/google-analytics';
 
 const exception = trackException((action, prevState, nextState) => {
   return {
-    description: /* (optional) */,
-    isFatal: /* (optional) */,
+    exDescription: /* (optional) */,
+    exFatal: /* (optional) */,
   };
 }, /* (optional) tracker names array or tracker name string */ );
 ```
 
-Don't need to track `description` or `isFatal`?
+Don't need to track `exDescription` or `exFatal`?
 
 ```js
 import { trackException } from '@redux-beacon/google-analytics';
